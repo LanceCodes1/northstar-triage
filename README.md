@@ -1,5 +1,12 @@
 # Northstar Support Co. — Agentic Ticket Triage
 
+> **Team project mirrored from [equezada327/northstar-triage](https://github.com/equezada327/northstar-triage).**
+> **My role: Integration Engineer.** I built the data layer that gets tickets into the system and policy out:
+> - `ticket_source.py`: CSV ticket loader plus a SQLite loader behind the same interface, so swapping in a real help desk API only touches one file
+> - Handling for malformed CSV rows, so bad data doesn't crash a run
+> - `policy_lookup.py`: normalized category input for reliable policy matching
+> - Grew the evaluation ticket set to 30, covering edge cases and ambiguous tickets
+
 Multi-agent prototype for The Knowledge House AI Business Solutions Engineering
 Fellowship, Phase 2 final project.
 
